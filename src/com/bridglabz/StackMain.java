@@ -8,7 +8,8 @@ public class StackMain {
         St.push(70);
         St.push(30);
         St.push(56);
-        
+        St.pop();
+        St.peek();
         St.print();
     }
 }

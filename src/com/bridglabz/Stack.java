@@ -17,6 +17,20 @@ public class Stack {
         head = newNode;
 
     }
+    public int pop() {
+        if (isEmpty()) {
+            return -1;
+        }
+        int top = head.data;
+        head.next = head;
+
+        return top;
+    }
+
+    int peek() {
+
+        return head.data;
+    }
     void print(){
         Node temp = head;
         while(temp!=null){
