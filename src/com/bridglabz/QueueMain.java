@@ -7,7 +7,7 @@ public class QueueMain {
         Qu.Enqueu(30);
         Qu.Enqueu(70);
         Qu.print();
-       // Qu.Dequeue();
-     //   Qu.print();
+       Qu.Dequeue();
+       Qu.print();
     }
 }

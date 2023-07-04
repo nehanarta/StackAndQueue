@@ -19,8 +19,19 @@ public class Queue {
     }
 
 
+    public int Dequeue () {
+        if (isEmpty()) {
+            System.out.println("The Queue is empty.");
+            return -1;
+        }
+        int front = head.data;
+        if (head == tail) {
+            tail = null;
+        }
+        head = head.next;
+        return front;
+    }
 
-    
     void print(){
         Node temp = head;
         while(temp!=null){
